@@ -12,45 +12,24 @@ package:
 base: org.deepin.base/25.2.1
 
 build: |
-  rm -rf /etc/apt/sources.list.d/testing.sources
-  echo 'deb [arch=arm64 trusted=yes]  https://ci.deepin.com/repo/deepin/deepin-community/stable crimson/release main commercial community' > /etc/apt/sources.list.d/deepin.list || true
-  apt-get update || true
-  apt-get install -y git quilt  # 安装git
-  mkdir -p /project/webkit2gtk4
-  mv /project/linglong/sources/webkit2gtk /project/webkit2gtk4/webkit2gtk
-  cd /project/webkit2gtk4/webkit2gtk
-  git fetch origin tag 2.48.0-1deepin1
-  git switch --detach 2.48.0-1deepin1 
-  export QUILT_PATCHES=debian/patches
-  quilt import /project/0001-fix-runtime-adapt-to-Linglong-runtime-path.patch || true
-  # quilt push -a || true
-  apt-get build-dep ./ -y
-  dpkg-buildpackage -uc -us -b 
-  cp -a ../libjavascriptcoregtk-4.1-0_2.48.0-1deepin1_arm64.deb /project/linglong/sources/ || true
-  cp -a ../libjavascriptcoregtk-4.1-dev_2.48.0-1deepin1_arm64.deb /project/linglong/sources/ || true
-  cp -a ../libwebkit2gtk-4.1-0_2.48.0-1deepin1_arm64.deb /project/linglong/sources/ || true
-  cp -a ../libwebkit2gtk-4.1-dev_2.48.0-1deepin1_arm64.deb /project/linglong/sources/ || true
-  cd /project
   bash ./build.bash
 sources:
-  - kind: git
-    url: https://github.com/deepin-community/webkit2gtk.git
-    commit: 2.48.0-1deepin1
-    version: 2.48.0-1deepin1
-    name: webkit2gtk
+  - kind: file
+    url: https://obsci.odata.cc/home:/Admin:/linglong/deepin_25_repo/arm64/libjavascriptcoregtk-4.1-0_2.48.0-1deepin1_arm64.deb
+    digest: 9fd7e14f8d214f830e816f935d8640fcba2e4c560fe7b1526774b1613624bee1
+  - kind: file
+    url: https://obsci.odata.cc/home:/Admin:/linglong/deepin_25_repo/arm64/libwebkit2gtk-4.1-0_2.48.0-1deepin1_arm64.deb
+    digest: 16fc1abbdaa92414e8417f8095b946cb853e4bfb7a9f685ba819db98e27747ce
   # linglong:gen_deb_source sources arm64 https://ci.deepin.com/repo/deepin/deepin-community/stable crimson/release main commercial community
-  # linglong:gen_deb_source install libgtk-4-1, libgtk-4-common, libwebkit2gtk-4.1-0, libwebkit2gtk-4.1-dev, libjavascriptcoregtk-4.1-0, libjavascriptcoregtk-4.1-dev, libadwaita-1-0, libgtk-4-media-gstreamer, libavif16, libgtk-3-0, libgtk-3-bin, libgtk-3-common, libgtk-4-dev, libadwaita-1-dev, libavif-dev, libgtk-3-dev
+  # linglong:gen_deb_source install libgtk-4-1, libgtk-4-common, libwebkit2gtk-4.1-0, libwebkit2gtk-4.1-dev, libjavascriptcoregtk-4.1-0, libjavascriptcoregtk-4.1-dev, libadwaita-1-0, libgtk-4-media-gstreamer, libavif16, libgtk-3-0, libgtk-3-bin, libgtk-3-common, libgtk-4-dev, libadwaita-1-dev, libavif-dev, libgtk-3-dev, libsoup-3.0-0, libatomic1, libxslt1.1, libwoff1, libgstreamer-plugins-bad1.0-0, libgstreamer-gl1.0-0, libflite1, libavif16, libenchant-2-2, libsecret-1-0
   # linglong:gen_deb_source exclude fonts-croscore, fonts-freefont-otf, fonts-freefont-ttf, fonts-liberation, fonts-texgyre
   # linglong:gen_deb_source exclude libwebkit2gtk-4.1-0, libwebkit2gtk-4.1-dev, libjavascriptcoregtk-4.1-0, libjavascriptcoregtk-4.1-dev
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/e/eo-spell/aspell-eo_2.1.2000.02.25-60_all.deb
-    digest: 053071e0f9265fb8d52e1f5ed2e9cdcd0f37a2d38fc3127323db4a9a17b57635
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/s/softcatala-spell/aspell-ca_0.20111230b-14_all.deb
+    digest: 1989ca91b27e1635c3d91a5853e28401dedc3b45e4e6720bf781df354cf8c76c
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/a/aspell/aspell_0.60.8-6_arm64.deb
     digest: 058ca8eaf7f1bc30df830528b3123b313deeeeb51267812ddc0d521ca7090e84
-  - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/b/binutils/binutils-aarch64-linux-gnu_2.41-6deepin7_arm64.deb
-    digest: 6d594af95ee6ae34a14f687a619b97684e7e136ec2551a36157a456f1b718577
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/b/bubblewrap/bubblewrap_0.10.0-1_arm64.deb
     digest: 3e0da7a3b47c73c8db57509d77ad47d3702e3bcd3730d6a06ce79f635aa52779
@@ -523,6 +502,9 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libs/libsm/libsm-dev_1.2.3-1_arm64.deb
     digest: 46feef23a5735fcfb0bba9fc8bff8159ff57acc2d53aaec1445f51822f82f913
   - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libs/libsoup3/libsoup-3.0-0_3.4.3-1_arm64.deb
+    digest: 63d38bb5bae8c88b4b15f0696363c264c56fd409931268b8815f25c40793a928
+  - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/community/libs/libsoup3/libsoup-3.0-0_3.6.5-1_arm64.deb
     digest: 14f4d1975d8e9c4c72d8f917aecdca4f0c197c2865b3d83ff950b69f3d5aaef5
   - kind: file
@@ -679,8 +661,8 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/m/mime-support/mime-support_3.66_all.deb
     digest: 20294deda4378616c2b48614ee226731ec09663c3497c35a467e8ea5fa03f16a
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/m/myspell-sq/myspell-sq_1.6.4-1.2_all.deb
-    digest: 3c8133dd758f81c3a5344c7c15fa63db4ee477fa861c3567f910627cf3861038
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/e/eo-spell/myspell-eo_2.1.2000.02.25-60_all.deb
+    digest: fd8fc086bc5abcfba713b7e4ee79f959a5f6fcf0630b563c76100d7e12eacc4c
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/p/pango1.0/pango1.0-tools_1.52.2+ds-1_arm64.deb
     digest: 6949f763c1ec22a5f9c6bee3c8523db9b9bf24803a996d05b6029e2a6a530808
