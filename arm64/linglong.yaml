@@ -4,7 +4,7 @@ package:
   id: org.deepin.runtime.gtk4
   name: Linyaps GTK4 Runtime
   kind: runtime
-  version: 25.2.1.0
+  version: 25.2.1.2
   description: |
     GTK4 is a cross-platform C application framework. GTK's primary feature
     is its rich set of widgets that provide standard and beautiful GUI functionality.
@@ -25,11 +25,14 @@ sources:
   # linglong:gen_deb_source exclude fonts-croscore, fonts-freefont-otf, fonts-freefont-ttf, fonts-liberation, fonts-texgyre
   # linglong:gen_deb_source exclude libwebkit2gtk-4.1-0, libwebkit2gtk-4.1-dev, libjavascriptcoregtk-4.1-0, libjavascriptcoregtk-4.1-dev
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/s/softcatala-spell/aspell-ca_0.20111230b-14_all.deb
-    digest: 1989ca91b27e1635c3d91a5853e28401dedc3b45e4e6720bf781df354cf8c76c
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/a/aspell-tl/aspell-tl_0.4-0-22_all.deb
+    digest: b72fe8985911a155b042ed9f45cfb7efcbf861b576a856764c17ebf19eb7d76b
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/a/aspell/aspell_0.60.8-6_arm64.deb
     digest: 058ca8eaf7f1bc30df830528b3123b313deeeeb51267812ddc0d521ca7090e84
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/b/binutils/binutils-aarch64-linux-gnu_2.41-6deepin7_arm64.deb
+    digest: 6d594af95ee6ae34a14f687a619b97684e7e136ec2551a36157a456f1b718577
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/b/bubblewrap/bubblewrap_0.10.0-1_arm64.deb
     digest: 3e0da7a3b47c73c8db57509d77ad47d3702e3bcd3730d6a06ce79f635aa52779
@@ -48,6 +51,21 @@ sources:
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/d/dpkg/dpkg-dev_1.22.6deepin4_all.deb
     digest: 8b3ec535c58fd4041effcff798c688ab1f4a36b6c2ac5989412020686c7607f7
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/fonts-noto/fonts-croscore_20201225-deepin_all.deb
+    digest: afbaf120869a08aa7dd14da9ad014de48a751aa4330534b531410bb86c411b55
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/fonts-freefont/fonts-freefont-otf_20120503-10_all.deb
+    digest: c66666da94b9a0477351ee9d6d7a247a0a3c842e428da770991b45f03be2ee72
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/fonts-freefont/fonts-freefont-ttf_20120503-10_all.deb
+    digest: 79b23c3945d4628463672a804a0e81bc4c262ef87cb6316afb40167a50bc3145
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/fonts-liberation/fonts-liberation_2.1.5-3_all.deb
+    digest: 9285213fd8d6515bc6c1be5b810bf39918a668a17024a9fd3541879ce7fb5344
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/t/tex-gyre/fonts-texgyre_20180621-3.1_all.deb
+    digest: f66d6f798c4b99d8490558cc8209c069b0fe5577c11378c0e01f9e87ddf10824
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/g/gcc-12/g++-12_12.3.0-17deepin14_arm64.deb
     digest: 32f43f56e2a593297f93cbcd75af9d4107ab78c185d79bf40245b38b8ec62756
@@ -118,8 +136,8 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/i/icu/icu-devtools_74.2-1deepin1_arm64.deb
     digest: 7951e556c907a2b6439e3f760389339766b4c1d538817c4db6bcc4d7fa26e13f
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/n/norwegian/inorwegian_2.2-4_arm64.deb
-    digest: e8d117b503b8a0c4b4a892a54874567dee26c98b89fca916c80b6abbd6c3f858
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/i/iirish/iirish_2.0-27.1_arm64.deb
+    digest: 04d57b0f2962506e81c37b2896fe54090c2917d0acb55c65d4463ce6d42585d4
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/i/ispell/ispell_3.4.02-2_arm64.deb
     digest: 87527e25417546f4ecf1ee77c270bcb0359b3fb76b467aa9b4878d9c1d33516f
@@ -253,6 +271,9 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/fontconfig/libfontconfig-dev_2.14.2-6_arm64.deb
     digest: d965d2bee11b03bb0b86e876a78f5f3b3f5ae3b66ed3f74a8baed4f1a2edb058
   - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/fontconfig/libfontconfig1-dev_2.14.2-6_arm64.deb
+    digest: 6a01f4bc5a0369c10ce0021b23b3a4985c54672a05714b17b736f364f37805fb
+  - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/freetype/libfreetype-dev_2.13.2+dfsg-1deepin1_arm64.deb
     digest: dc1cc27076ac172ffd75b7fe88d5889be20c84eb0dbbeeff2a29f24c84d965dd
   - kind: file
@@ -384,6 +405,12 @@ sources:
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/g/gcc-13/libitm1_13.2.0-3deepin4_arm64.deb
     digest: 87cba09f467f9a778892ea73bfcb1ef339cf801b64b494522dee4c045c770ba0
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/w/webkit2gtk/libjavascriptcoregtk-4.1-0_2.48.0-1_arm64.deb
+    digest: 3b88586c63ccd91e36508add5e8e6215039dbd1c105c4a786c573abf8564b843
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/w/webkit2gtk/libjavascriptcoregtk-4.1-dev_2.48.0-1_arm64.deb
+    digest: 5018eb8e18eec22078d775a92514e89a7923c2ce11615804ba0a55c6aec0434f
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/j/jbigkit/libjbig-dev_2.1-3.1-deepin1_arm64.deb
     digest: d554b612e70c2416c6d831b575c1bc1c3f4c0143454ada80203e08f918143e77
@@ -571,6 +598,12 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/w/wayland/libwayland-dev_1.23.0-1_arm64.deb
     digest: 090a792550a342cf77f3d1adcafd96a26057eb8b9bf722c8b816c8dea780eab6
   - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/w/webkit2gtk/libwebkit2gtk-4.1-0_2.48.0-1_arm64.deb
+    digest: 037943d4b919c67c026e32b3bacad80e9c57a6003f3e555325ca61f433f7d101
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/w/webkit2gtk/libwebkit2gtk-4.1-dev_2.48.0-1_arm64.deb
+    digest: a9a0d61faabd746d0ef3da3d6097677b44001f9da71ab3ea98e82d4915c780b1
+  - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libw/libwebp/libwebp-dev_1.3.2-0.2_arm64.deb
     digest: f783e2d15596e657a9077db7a3dd7e8de84360a27ab504644069df49922a9545
   - kind: file
@@ -661,8 +694,8 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/m/mime-support/mime-support_3.66_all.deb
     digest: 20294deda4378616c2b48614ee226731ec09663c3497c35a467e8ea5fa03f16a
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/e/eo-spell/myspell-eo_2.1.2000.02.25-60_all.deb
-    digest: fd8fc086bc5abcfba713b7e4ee79f959a5f6fcf0630b563c76100d7e12eacc4c
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/h/hspell/myspell-he_1.4-3.1_all.deb
+    digest: efcce87c75bc547f2172c9c872e2f9f55c2b14b7d106d1306c1540f69b96955a
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/p/pango1.0/pango1.0-tools_1.52.2+ds-1_arm64.deb
     digest: 6949f763c1ec22a5f9c6bee3c8523db9b9bf24803a996d05b6029e2a6a530808
@@ -681,6 +714,12 @@ sources:
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/p/python-autocommand/python3-autocommand_2.2.2-3_all.deb
     digest: dec5f54f6f079f9415fea29387b21bcce0d0648690cd095fc0acadf3068f7445
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/p/python-importlib-metadata/python3-importlib-metadata_7.1.0-1_all.deb
+    digest: 7101edca5e29c1860afc89f2191a76d3b52a758d1480126657919495dcc65778
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/i/importlib-resources/python3-importlib-resources_6.0.1-1_all.deb
+    digest: c930fdd8f6413486cd374d0f18a1cca9c2fa81c8e70a360f90b68ac5cd710ff8
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/p/python-inflect/python3-inflect_7.3.1-2_all.deb
     digest: e950dba744d19d0828250e6747dbe9406a89c30e3393188db23d9959f7794a8b
@@ -724,6 +763,12 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/p/python-zipp/python3-zipp_1.0.0-6_all.deb
     digest: 34c8550e628478c27bded1b4b624dc8dd3df231cb3ed8ae4a20c713d2ed94ab7
   - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/community/q/qemu/qemu-user-static_8.2.0+ds-1deepin15_arm64.deb
+    digest: 55e2c35946568735e4a644448f43482b0e8e44fa3aadddd14ac00167af6525a6
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/community/q/qemu/qemu-user_8.2.0+ds-1deepin15_arm64.deb
+    digest: 5de313fef4619d871c8abb52b17193b009df347e43e15991256a4f9dba6f571b
+  - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/s/sgml-base/sgml-base_1.30_all.deb
     digest: 7ae50089218865dda4f7250a349c6fd6976702894b1b45f6ef935cf89855c4ce
   - kind: file
@@ -736,8 +781,23 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/w/wayland-protocols/wayland-protocols_1.38-1deepin1_all.deb
     digest: 248dfed6414084fd970fec8d8e137a401544c1d07a0755d8193f3d07bfda5a2f
   - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/x/xorgproto/x11proto-core-dev_2024.1-1_all.deb
+    digest: 82bff9dab1d74e30bdbc6130f94d1bd361c3c1d3cdad660bd92e5b730c4cba7b
+  - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/x/xorgproto/x11proto-dev_2024.1-1_all.deb
     digest: 39e14817ff2ab4eedade206fefebb7b2632e4dd7c358a9cfe36bcdd477554a04
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/x/xorgproto/x11proto-record-dev_2024.1-1_all.deb
+    digest: d3d864851a95c9f75b58f6bb5de92217b28c27ffad333b0ddbddf2e70c569f0c
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/x/xorgproto/x11proto-render-dev_2024.1-1_all.deb
+    digest: 7fb5329b624a9bcf86b4c6f4a3df92650c1c6a2041f0a75f4ae5c6f819915eba
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/x/xorgproto/x11proto-xext-dev_2024.1-1_all.deb
+    digest: 526c91c0ba582e603fdf861db0c0408bc11b2507514cf7aacd1abb5d2092b953
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/x/xorgproto/x11proto-xinerama-dev_2024.1-1_all.deb
+    digest: 04836495dc7c5c0d0934320e90db7dda22641dc8a041a755400c71c3ac729932
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.2-2_arm64.deb
     digest: ee6c862e58ce27168e24dc3d1f85b8bf76e51a9bd99a404edeadea458ad9c44a
