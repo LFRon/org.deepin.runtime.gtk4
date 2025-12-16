@@ -4,7 +4,7 @@ package:
   id: org.deepin.runtime.gtk4
   name: Linyaps GTK4 Runtime
   kind: runtime
-  version: 25.2.1.13
+  version: 25.2.1.15
   description: |
     GTK4 is a cross-platform C application framework. GTK's primary feature
     is its rich set of widgets that provide standard and beautiful GUI functionality.
@@ -91,7 +91,7 @@ build: |
 
   # Add GST_PLUGIN_PATH ENV to Profile
   mkdir -p $PREFIX/etc
-  echo "export GST_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/gstreamer-1.0:/runtime/lib/x86_64-linux-gnu/gstreamer-1.0" > $PREFIX/etc/profile
+  echo "export GST_PLUGIN_PATH=/runtime/lib/$(uname -m)-linux-gnu/gstreamer-1.0" > $PREFIX/etc/profile
 
   # libgtk-4-dev, libadwaita-1-dev, libavif-dev, libgtk-3-dev libwebkit2gtk-4.1-dev, libjavascriptcoregtk-4.1-dev, 
 sources:
