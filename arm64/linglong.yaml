@@ -4,7 +4,7 @@ package:
   id: org.deepin.runtime.gtk4
   name: Linyaps GTK4 Runtime
   kind: runtime
-  version: 25.2.1.15
+  version: 25.2.1.16
   description: |
     GTK4 is a cross-platform C application framework. GTK's primary feature
     is its rich set of widgets that provide standard and beautiful GUI functionality.
