@@ -4,12 +4,12 @@ package:
   id: org.deepin.runtime.gtk4
   name: Linyaps GTK4 Runtime
   kind: runtime
-  version: 25.2.1.15
+  version: 25.2.2.0
   description: |
     GTK4 is a cross-platform C application framework. GTK's primary feature
     is its rich set of widgets that provide standard and beautiful GUI functionality.
 
-base: org.deepin.base/25.2.1
+base: org.deepin.base/25.2.2
 
 # buildext:
   # apt:
@@ -115,13 +115,13 @@ sources:
   - kind: file
     url: http://ftp.cn.debian.org/debian/pool/contrib/g/gst-plugins-bad1.0-contrib/gstreamer1.0-fdkaac_1.20.0-1_amd64.deb
     digest: 849e4fdd6c9b919e0c1c5e2210ad3ae90c36c4a2473290c0fc2b471d3440a2ee
-  # linglong:gen_deb_source sources amd64 https://ci.deepin.com/repo/deepin/deepin-community/stable crimson/release main commercial community
+  # linglong:gen_deb_source sources amd64 https://ci.deepin.com/repo/deepin/deepin-community/stable crimson/2510 main commercial community
   # linglong:gen_deb_source install libgtk-4-1, libgtk-4-common, libwebkit2gtk-4.1-0, libjavascriptcoregtk-4.1-0, libadwaita-1-0, libgtk-4-media-gstreamer, libavif16, libgtk-3-0, libgtk-3-bin, libgtk-3-common, libsoup-3.0-0, libayatana-appindicator3-1, libflite1, libgstreamer-gl1.0-0, libgstreamer-plugins-bad1.0-0, libavif16, libwoff1, libatomic1, libxslt1.1, libenchant-2-2, libsecret-1-0, libhyphen0, libmanette-0.2-0, gstreamer1.0-pulseaudio, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly, gstreamer1.0-libav, gstreamer1.0-tools, gstreamer1.0-alsa, libfdk-aac2, gstreamer1.0-gl, libblas3
   # linglong:gen_deb_source exclude fonts-croscore, fonts-freefont-otf, fonts-freefont-ttf, fonts-liberation, fonts-texgyre
   # linglong:gen_deb_source exclude libwebkit2gtk-4.1-0, libwebkit2gtk-4.1-dev, libjavascriptcoregtk-4.1-0, libjavascriptcoregtk-4.1-dev
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/a/aspell-en/aspell-en_2018.04.16-0-1_all.deb
-    digest: 3ef38d7478af3d99952281316c6fa167d41c2d63fca155f6439ce68ae724e7a4
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/a/aspell-pl/aspell-pl_20250101-1_all.deb
+    digest: e76e69e602fe6d7d214d784484f2efe5f305264f8236563096d42f169698d9fe
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/a/aspell/aspell_0.60.8-6_amd64.deb
     digest: d0a1cf2583ca5ed794671c4156ff6d03c7ceb7166c8d752f828f17ebdde4c7b6
@@ -141,8 +141,8 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/g/gst-libav1.0/gstreamer1.0-libav_1.24.6-1_amd64.deb
     digest: 44f6c49509a9d0b0faf8d35aeab850a3b955f2f325756d4457455c8935353e6a
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/g/gst-plugins-bad1.0/gstreamer1.0-plugins-bad_1.24.6-1deepin1_amd64.deb
-    digest: 8b9075ae3450c27079788e66f2ef6614ae8b31d9fe022090cb7476ce194c08a0
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/g/gst-plugins-bad1.0/gstreamer1.0-plugins-bad_1.24.6-1deepin3_amd64.deb
+    digest: b011d1eab0439ba2886efbfce79110434a9510a01271cd2ac2c3cce6e28279ee
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/g/gst-plugins-base1.0/gstreamer1.0-plugins-base_1.24.6-1_amd64.deb
     digest: 3a15070887e53d04d0866eded24713e905f78309ead3da0bf4710654406a082f
@@ -162,8 +162,8 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/s/scowl/hunspell-en-us_2020.12.07-1_all.deb
     digest: 6a8253970b5399571a39d53de050d169ed3eae866aa656b0dea37531a68549de
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/i/ifrench-gut/ifrench-gut_1.0-32.3_amd64.deb
-    digest: b7d49a155425016b446e468e57210b4ecd34d7a33b714fd9f8fc286682bdc9b4
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/i/ispell-et/iestonian_20030606-32_all.deb
+    digest: e13d5310758f150803c4420513aa2772ada516bc297f0707fc9f587472e55c93
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/i/ispell/ispell_3.4.02-2_amd64.deb
     digest: 2db3cd70af980d785fe5701f824cbbbdc8bc8a1d0258494e95fb74a2a6aec158
@@ -192,11 +192,11 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/liba/libavc1394/libavc1394-0_0.5.4-5_amd64.deb
     digest: 27a869ad9b0f6673fe4c6e6dc6aae04f58b550fa9f2de4c9c9ba64cda6e9937a
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/ffmpeg/libavfilter9_6.1.1-2deepin2_amd64.deb
-    digest: 274d9c2fc032c05e8681123e433df396aeac198b820bb4de7ddf415f0eb6a6d9
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/ffmpeg/libavfilter9_6.1.1-2deepin6_amd64.deb
+    digest: 954bb027c351ef406b0b5c783fa2e120b8807292f69ceee3da4384cc931737e6
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/ffmpeg/libavformat60_6.1.1-2deepin2_amd64.deb
-    digest: 5a9d472dc24c2fca1fdb108e4c63c28f1bcd4cf4921e8bdeaab9920b0c4c6cce
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/ffmpeg/libavformat60_6.1.1-2deepin6_amd64.deb
+    digest: c04d5149ac01cd0ed79bc7e786594c069e2f00c9f7bae81c7ae393994669cfa4
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/liba/libavif/libavif15_0.11.1-3_amd64.deb
     digest: 572845eabad9ceadcfd1923b940e4c56d4b9cc0636134774cd3a2dd9a1c35701
@@ -240,14 +240,14 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/c/chromaprint/libchromaprint1_1.5.1-4deepin0_amd64.deb
     digest: 1ee2dbafa2c331d58cf10cdf546c760d7a734c5d9fab1b16d2e04e51f6e38623
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/c/cjson/libcjson1_1.7.18-3_amd64.deb
-    digest: e638d498f51d1c6b3a67b0463fb57269e996b572f59237b041d07ada88d7a69d
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/c/cjson/libcjson1_1.7.18-3.1deepin1_amd64.deb
+    digest: 0c0ac88efe846e4cccd84c896722e981be3a276b984541a4aeb67b1a97a86100
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libd/libdbusmenu/libdbusmenu-glib4_18.10.20180917~bzr492+repack1-deepin1_amd64.deb
-    digest: 5cc2ae8f9032e247d6648ead0a8328233d34ed51ce5e472255611fc0e9e801de
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libd/libdbusmenu/libdbusmenu-glib4_18.10.20180917~bzr492+repack1-deepin2_amd64.deb
+    digest: c5dbca063d157b34b19c2389496dc7a011f4f50aa21d92a7d53bf6ac488ee614
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libd/libdbusmenu/libdbusmenu-gtk3-4_18.10.20180917~bzr492+repack1-deepin1_amd64.deb
-    digest: 3eed21075d074284272fa913011f47d48e2b136e3e9a9b7aaf38450312d93bc1
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libd/libdbusmenu/libdbusmenu-gtk3-4_18.10.20180917~bzr492+repack1-deepin2_amd64.deb
+    digest: 4b843e0f0e5bf6831367f67fd1634d557996773fa88007782cc229e626e52c52
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libd/libdc1394/libdc1394-25_2.2.6-4_amd64.deb
     digest: 6c06c202fd9c218273314883074f55ab3a3b942ff75319af502de00d65ecf252
@@ -255,8 +255,8 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libd/libdca/libdca0_0.0.7-2_amd64.deb
     digest: 6629bdc19be38b79483531d7770bfdf3cf79f51d249dc7df02af439f02d386ac
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libd/libde265/libde265-0_1.0.15-1_amd64.deb
-    digest: 70349a1252f96e510b63a9f6ae3ddcf0ef771c82f7c0bd0a6931cb83ad4c5305
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libd/libde265/libde265-0_1.0.16-1_amd64.deb
+    digest: 440f7ec09c0a4be4c11f48aa8c30b61a95b2e52f991403017290862e7a08c2bf
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/d/directfb/libdirectfb-1.7-7_1.7.7-9deepin0_amd64.deb
     digest: 3009470a9795560d711677766c21c9702b3c7453b4af5751674cbf524a25ee00
@@ -285,8 +285,8 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libf/libfile-find-rule-perl/libfile-find-rule-perl_0.34-1_all.deb
     digest: 8ebc94473bf3381e34408415da523e390c2fb3be418f3c298deb6bc82373ded5
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/flite/libflite1_2.2-6_amd64.deb
-    digest: b051da086707e0aa6576b97646a5f4ab6a4d0ef16e1657d06bee41d50d2be9af
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/flite/libflite1_2.2-7_amd64.deb
+    digest: 8851ce503276f63416a9f1776fe8051b87c2fafcb3ed0990bd4e1572b4ad3ec8
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/fluidsynth/libfluidsynth2_2.1.7-1.1_amd64.deb
     digest: 93db0e43a532b77ee78a651068cbbd5bfe889c9db7b35ab977478c20f6e75893
@@ -312,11 +312,11 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/g/gst-plugins-base1.0/libgstreamer-gl1.0-0_1.24.6-1_amd64.deb
     digest: 5e0621339870e5af412c689c0fc54313fa60f09c94262689c3b0b8fd6dead35d
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/g/gst-plugins-bad1.0/libgstreamer-plugins-bad1.0-0_1.24.6-1deepin1_amd64.deb
-    digest: a6b820cc9fbc7b9a022657405031c73f81b54615d328c26c5a3066360b9d033c
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/g/gst-plugins-bad1.0/libgstreamer-plugins-bad1.0-0_1.24.6-1deepin3_amd64.deb
+    digest: 77fabdd3d234e7875bb56b35b3e6c4da6e925a18ffdcd349d91b83e21059ba71
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/g/gtk+3.0/libgtk-3-bin_3.24.41-1deepin4_amd64.deb
-    digest: 45b932ae9e58be9050aff4d25b5ac3378dfc5308576c95dfec554b10deab7dd0
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/g/gtk+3.0/libgtk-3-bin_3.24.41-1deepin5_amd64.deb
+    digest: cf1042e1f552868f58d23c7a98138972466ca602e56a4486536363f71f8cd181
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/g/gtk4/libgtk-4-1_4.16.7+ds-1deepin1_amd64.deb
     digest: 73926670a88ffa96d8798a1fcd699e83efc8e48b57d4ac1b230d365dfb43aa84
@@ -342,8 +342,8 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/h/hyphen/libhyphen0_2.8.8-7_amd64.deb
     digest: d4d72b7419db3fb7bb9663d30c2336eee0244bee22fc8b7bdec37e266bb17ace
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/i/imath/libimath-3-1-29_3.1.9-3+rb3_amd64.deb
-    digest: 91682baa98432075d03a7b6069572acc60322c52af51178e681cf2ad783cc4eb
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/i/imath/libimath-3-1-29_3.1.12-1deepin2+rb1_amd64.deb
+    digest: 0cef34b92b8c1f3e257c72614538ab0a1d9f6315d88dec552898aa2d68e5d75f
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libi/libinstpatch/libinstpatch-1.0-2_1.1.6-1_amd64.deb
     digest: 5be27e4700431bb095938367a1fa38118e8467261dceb8ee5013728ff69ad337
@@ -372,8 +372,8 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/m/mbedtls/libmbedcrypto3_2.16.9-0.1_amd64.deb
     digest: 1e2259f608a4bd66990c6ec31539f6b328776721a6ab5893e172802db5b4d952
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/i/intel-mediasdk/libmfx1_22.5.4-1deepin1_amd64.deb
-    digest: 492c24ee900ac1265f88928808b0535451f41f42c202205ca6d8d9e11a40cd89
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/i/intel-mediasdk/libmfx1_22.5.4-1deepin2_amd64.deb
+    digest: d38944f4a560e8640c59a3a98097fc0b12f459196830241ada2c883d87522651
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/m/mjpegtools/libmjpegutils-2.1-0_2.1.0+debian-6deepin0_amd64.deb
     digest: bf7111cf02fcbb654c72cecdc8f24fe9c6d9722d7bcf7d434cd85854846ac462
@@ -441,8 +441,8 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/p/pocketsphinx/libpocketsphinx3_0.8+5prealpha+1-13_amd64.deb
     digest: 300815c25c3d2b8aec8dfd4a03fe74da7d6bab832deb21fe5aa24a3a7e390885
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/ffmpeg/libpostproc57_6.1.1-2deepin2_amd64.deb
-    digest: 48c14ad01844820e5d2d37b4ec3353529ab7e0eddd277c0d64c863d1258d3e08
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/ffmpeg/libpostproc57_6.1.1-2deepin6_amd64.deb
+    digest: 65090a9cd67e401302a6468a8b73cff96f94ad65eeed0a2e5bc1ab07dca0f9ae
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/q/qrencode/libqrencode4_4.1.1-1_amd64.deb
     digest: 42d31e2725526cd1567035e54becf8a0219ee16ae2f3de6713c5babdab438776
@@ -489,11 +489,11 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libs/libsoup3/libsoup-3.0-0_3.4.3-1_amd64.deb
     digest: 9888c53cf0e3cedfe9c8f06e3e08d225b063843874a74f9d74518cb25fc182e6
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/community/libs/libsoup3/libsoup-3.0-0_3.6.5-1_amd64.deb
-    digest: a4b1d5eeb4a98bf8a3d33974b46da58776a9ba8cccbf35b297c43c460e578683
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/community/libs/libsoup3/libsoup-3.0-0_3.6.5-3_amd64.deb
+    digest: e2753a14e6337d3314e4aea3cfca04f77332ff7a9072df68450b40816a3ff16c
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/community/libs/libsoup3/libsoup-3.0-common_3.6.5-1_all.deb
-    digest: 1ea79c817fec9cdbea2a333656efe9898ed4a7492018321c6b8a1a12a013ae35
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/community/libs/libsoup3/libsoup-3.0-common_3.6.5-3_all.deb
+    digest: a5a1e8e37214cc4277fc56d6dffe68ff3447356202dfc0e611cea5fe457835d1
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/s/spandsp/libspandsp2_0.0.6+dfsg-2_amd64.deb
     digest: 0635050e1b7f07c30e9973588d3dc951ba33dd4f1bb81a151905f30da0ef20e2
@@ -507,14 +507,14 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libs/libsrtp2/libsrtp2-1_2.4.2-2_amd64.deb
     digest: d3b44c30e87925fd9ce853497df5d02677682072e8d8d9dc8b4a59ec7c42558d
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libs/libssh/libssh-gcrypt-4_0.10.6-2_amd64.deb
-    digest: d24f878a3059bc9cfa70dc1053cb1a2aad772c63b8bc528d4ad47b089519c017
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libs/libssh/libssh-4_0.11.3-1_amd64.deb
+    digest: a525b7a475d9ef111dd4b9af0baa4eb5a06a15b008b5a9e27f754a5ee091eed7
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/s/snowball/libstemmer0d_2.2.0-4_amd64.deb
     digest: d05593b11c998ecb21efed0209790720520ee357368f7c1c978a11806be5d7a6
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/ffmpeg/libswscale7_6.1.1-2deepin2_amd64.deb
-    digest: 9889c27469bacd09cbaf06ceb3f8c7b0f3210248e79d120e68b434e2adfbcb28
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/f/ffmpeg/libswscale7_6.1.1-2deepin6_amd64.deb
+    digest: 23c5cbb956eacd24e11df263ff700de7557404a6c1309703716efb9eef0d10f5
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/t/taglib/libtag1v5-vanilla_1.12-1deepin0_amd64.deb
     digest: 4fdd6319d141f7950b7a0581b38a34f9a2e63f35a8ff38b2ed13a7a77e80e90e
@@ -555,8 +555,8 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libx/libxmlb/libxmlb2_0.3.14-2_amd64.deb
     digest: b7c560d9ef6d42ea8c8c01b96ad57b93ad53c76bcb585702c9cbdb6882ca3723
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libx/libxslt/libxslt1.1_1.1.34-4_amd64.deb
-    digest: 57b60e3910615c73c78c090eb6f5a3d69c13638e2f212fe651a610e6b6d72ced
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libx/libxslt/libxslt1.1_1.1.35-2deepin1_amd64.deb
+    digest: eed501b6df757628d03efd446bed3721b0d4dc2d15e6f7f664c334c68df54283
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/libx/libxss/libxss1_1.2.3-1_amd64.deb
     digest: c14df136ee438ad89b2eddff611d9686fb520f76df28ab30646e4941011b8617
@@ -570,8 +570,8 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/liby/libyuv/libyuv0_0.0.1888.20240710-3_amd64.deb
     digest: ee79d2e37a74fff74155751702fc35a4623f23093950fecb5cadb80dc23b9f6c
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/z/zbar/libzbar0_0.23.93-5deepin1_amd64.deb
-    digest: f899d40bb43b728bcc22ee9975484c100336ef58e48ad2528c41e4fd1d261bc8
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/z/zbar/libzbar0_0.23.93-5deepin2_amd64.deb
+    digest: 2f9f1034e4a906eda3cb8ef80756acc652433640f0f0c58019c42bafc5649ddd
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/z/zimg/libzimg2_3.0.3+ds1-deepin1_amd64.deb
     digest: 2a7e6a214b981289de1b7a419d9f91a40ebb6ecec1e9eb9254bba27c15892e64
@@ -582,8 +582,11 @@ sources:
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/z/zxing-cpp/libzxing2_1.4.0-3deepin1+rb1_amd64.deb
     digest: d83274946f64354d4b85c073a4c6f0c2676a09c71af06daab04ff035def3707c
   - kind: file
-    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/d/dsdo/myspell-da_1.6.36-11.1_all.deb
-    digest: e33e7b58e330e38e1617fa890d876eae431c58b174d434440daa7057b2ac4217
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/community/l/lsb/lsb-base_11.6_all.deb
+    digest: f8bedd167280e76636df3a1bc023cd2906d458916c1af4c1d7912c5b971fc642
+  - kind: file
+    url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/i/igaelic/myspell-gd_0.50-13.1_all.deb
+    digest: 0f906ff90d8b4547a60fcfae37247dd1186c73d2e09c26ee80bafb3a2c84b20c
   - kind: file
     url: https://ci.deepin.com/repo/deepin/deepin-community/stable/pool/main/t/timgm6mb-soundfont/timgm6mb-soundfont_1.3-5_all.deb
     digest: 1f7efb3956607601604a210c04526f0dec749139b875fca9a4f5b4b185db38bb
